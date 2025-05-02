@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUBE</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(185, 148, 122);
+            margin: 0%;
+            height: 100vh;
+        }
+        
+        .cube {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+            /* for 3d design*/
+            transform: rotateX(30deg) rotateY(120deg);
+        }
+        
+        .face1 {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: antiquewhite;
+            transform: translateZ(100px);
+        }
+        
+        .face2 {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(238, 179, 107);
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        
+        .face3 {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(139, 107, 64);
+            transform: rotateX(90deg) translateZ(100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cube">
+        <div class="face1"></div>
+        <div class="face2"></div>
+        <div class="face3"></div>
+    </div>
+
+</body>
+
+</html>
